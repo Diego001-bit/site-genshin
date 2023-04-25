@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap');
+@font-face {
+    font-family: 'romanus';
+    src: url(fontes/ROMANUS.otf);
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+:root{
+    --cor1 :#7b82e063;
+    --cor2 :#000DC7;
+    --cor3 :#000994;
+    --cor4 :#171A47;
+    --cor5 :#000547;
+    --Padrão:Arial, Helvetica, sans-serif;
+    --Cinzelh2: 'Cinzel', serif;
+    --romanus:'romanus',serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
+a{
+    text-decoration: none;
+}
+header {
+    color: white;
+    background-image: linear-gradient(to bottom,var(--cor2),var(--cor3),var(--cor5));
+    padding: 10px;
+}
+header h1{
+    font-family: var(--fonte-destaques);
+    text-align: center;
+    line-height: 3em;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+header p{
+    text-align: justify;
+    margin: auto;
+    max-width: 500px;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.123);
+}
+nav a{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: var(--Padrão);
+    font-weight: bold;
+}
+nav a:hover{
+    background-color:#7b82e063;
+    transition-duration: 1s;
+
+}
+body{
+    background-image: linear-gradient(to right,var(--cor5),var(--cor2),var(--cor3));
+}
+main img{
+    min-width: 320px;
+    max-width: 800px;
+    width: 100%;
+    display: block;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px;
+    margin: auto;
+    
+}
+main article{
+    margin: auto;
+    max-width: 1000px;
+    min-width: 350px;
+    text-align: justify;
+    border-radius: 10px;
+    background-color: white;
+}
+main h2{
+    padding: 30px 10px 10px 0px;
+    text-indent: 20px;
+    font-family: var(--Cinzelh2);
+    text-align: justify;
+    line-height: 2em;
+    text-shadow: 6px 3px 9px rgba(0, 0, 0, 0.445);
+
+}
+main p{
+    text-indent: 30px;
+    line-height: 2em;
+    font-family: var(--Padrão);
+    padding: 20px;
+    font-weight: normal;
+}
