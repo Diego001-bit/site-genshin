@@ -32,18 +32,20 @@ header h1{
     font-family: var(--fonte-destaques);
     text-align: center;
     line-height: 3em;
+    font-size: 3em;
     font-weight: bolder;
     padding-top: 10px;
 }
 header p{
     text-align: justify;
+    font-size: 1em;
     margin: auto;
     max-width: 500px;
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.123);
 }
 nav a{
     color: white;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
     border-radius: 5px;
     font-family: var(--Padrão);
     font-weight: bold;
@@ -75,7 +77,8 @@ main article{
     max-width: 1000px;
     min-width: 350px;
     text-align: justify;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px;
     background-color: white;
 }
 main h2{
@@ -84,13 +87,43 @@ main h2{
     font-family: var(--Cinzelh2);
     text-align: justify;
     line-height: 2em;
+    font-size: 2em;
     text-shadow: 6px 3px 9px rgba(0, 0, 0, 0.445);
 
 }
 main p{
     text-indent: 30px;
     line-height: 2em;
+    font-size: 1.3em;
     font-family: var(--Padrão);
     padding: 20px;
     font-weight: normal;
+}
+aside > h2{
+    color: var(--cor2);
+    font-size: 1.5em;
+}
+aside strong{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+aside > ul{
+    line-height: 1.4em;
+    font-size: 1.2em;
+    list-style-position: inside;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    font-family: var(--romanus);
+}
+a{
+    color: var(--cor2);
+}
+ul a:hover{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 7px;
+}
+footer{
+    
+
 }
