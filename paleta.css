@@ -26,6 +26,10 @@ a{
 header {
     color: white;
     background-image: linear-gradient(to bottom,var(--cor2),var(--cor3),var(--cor5));
+    background-image: url('imagens/imgfundo2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     padding: 10px;
 }
 header h1{
@@ -63,7 +67,6 @@ main img{
     max-width: 800px;
     width: 100%;
     display: block;
-    
     border-bottom-left-radius: 10px;
     border-bottom-right-radius:10px;
     margin: auto;
