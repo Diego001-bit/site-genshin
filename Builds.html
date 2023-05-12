@@ -7,6 +7,11 @@
     <link rel="shortcut icon" href="icone/George-Ui-Ancient-Legend-Books-Library.ico" type="image/x-icon">
     <link rel="stylesheet" href="paleta.css">
     <title>Buids</title>
+    <style>
+        #ress{
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -20,23 +25,30 @@
             </nav>
         </header>
         <article>
-            <p>
-                <input type="number" name="" id="shogundb"> 
-                <input type="number" name="" id="shogunre">
-                <input type="number" name="saepe" id="shoguntc">
-                <input type="number" name="Shogun" id="shogundc">
-                <input type="button" value="somar" onclick="somar">
-                <div id="ress">resultado</div>
-            </p>
+            <h1>Testendo status</h1>
+                Vamos avaliar sua shogun: <input type="number" value="txtvel" id="txtvel">dano basico 
+                <input type="button" value="verificar" onclick="calcular()">
+                <div id="res">
+
+                </div>
+            
         </article>
         
     </main>
     <script>
-        var res = ress
-        var danob = document.getElementById('shogundb')
-        var recarga = document.getElementById('shogunre')
-        var taxac = document.getElementById('shoguntc')
-        var danoc = document.getElementById('shogundc')
+       function calcular() {
+        var txtv = document.querySelector('input#txtvel')
+        var res = document.querySelector('div#res')
+        var vel = Number(txtv.value)
+        res.innerHTML = `<p>Sua shogun tem ${vel}</p>`
+        if (vel >= 2000){
+            res.innerHTML += `<p>está perfeito</p>`
+        }else if(vel <2000 && vel >= 1500){
+        res.innerHTML += '<p>Esta rasoavel,mas pode vim a trazer dificuldades no abismos,é indicado ter no minimo 2000</p>'
+        }else (vel < 1500)
+        res.innerHTML += '<p>Esta fraca,é possivel jogar normalmente mas a dificulda aumenta de modo imprevisivel,é indicado ter no minimo 2000</p>'
+        }
+
     </script>
 </body>
 </html>
