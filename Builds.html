@@ -25,22 +25,33 @@
             </nav>
         </header>
         <article>
-            <h1>Vamos avaliar sua shogun:</h1>
-            <p>Dano basico</p>
-                 <input type="number" value="txtvel" id="txtvel"> 
-
-                <p>Recarga:</p> <input type="number" value="recarga" id="recarga">
-
+            <section>
                 
-                <div id="res">
+                <h1>Vamos avaliar sua shogun:</h1>
+                    <p>Dano basico</p>
+                     <input type="number" value="txtvel" id="txtvel">
+                    <p>Recarga:</p>
+                    <input type="number" value="recarga" id="recarga">
+                
+                    <p>Taxa critica</p>
+                    <input type="number" value="taxac" id="taxac">
 
-                </div>
-                <div id="energia">
+                    <p>DANO CRITICO</p>
+                    <input type="number" value="danoc" id="danoc">
+                
+                    <div id="res">
+                    </div>
+                    <div id="energia">
+                    </div>
+                    <div id="taxacritica">
+                    </div>
+                    <div id="danocri">
 
-                </div>
-                <input type="button" value="verificar" onclick="calcular()">
+                    </div>
+                    <input type="button" value="Iniciar Avaliação" onclick="calcular()" id="botao">
+                       
+            </section>
         </article>
-        
     </main>
     <script src="teste.js"></script>
 </body>
