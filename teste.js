@@ -44,4 +44,7 @@ function calcular() {
         dano.innerHTML += '<p>Ela necessita de mais Dano critico, o minimo é <strong>100%</strong></p>'
     }
     }
+    function ventiav(){
+        
+    }
     /*else if(vel <2000 && vel >=1500 reg<250 && reg>=200 )*/ 
