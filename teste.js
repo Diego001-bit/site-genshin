@@ -2,12 +2,15 @@ function calcular() {
     var txtv = document.querySelector('input#txtvel')
     var res = document.querySelector('div#res')
     var vel = Number(txtv.value)
+    var img = document.getElementById ('shogun')
+    var seletor = document.getElementById ('eletrica')
+    
     res.innerHTML = `<p>Sua shogun tem ${vel}</p>`
     if (vel >= 2000){
         res.innerHTML += `<p>está perfeita,parabéns pela sua deticação</p>`
-    }else if(vel <2000 && vel >= 1500){
+    }else if(vel <2000 && vel >= 1600){
         res.innerHTML += '<p>Esta rasoavel,mas pode vim a trazer dificuldades no abismos,é indicado ter no minimo 2000</p>'
-    }else if(vel < 1500) {
+    }else if(vel < 1600) {
         res.innerHTML += '<p>Esta fraca,é possivel jogar normalmente mas a dificulda aumenta de modo imprevisivel,é indicado ter no minimo 2000</p>'
     }
     var rec = document.querySelector('input#recarga')
@@ -43,8 +46,18 @@ function calcular() {
     }else if(dan <100){
         dano.innerHTML += '<p>Ela necessita de mais Dano critico, o minimo é <strong>100%</strong></p>'
     }
+    
+    if (vel >= 2000 && reg >=250 == tax > 60 && dan > 150){
+        img.setAttribute ('src','imagens/raid-pc.jpg')
+    }else if (vel >= 2000 || vel < 2000 && vel >= 1600 && reg >=250 || reg <250 && reg >= 200 ||  tax > 60 || tax <60 && tax >= 50 && dan > 150 || dan <150 && dan > 100){
+        img.setAttribute ('src','imagens/shogun-js-pc2.jpg')
+    }else {
+        img.setAttribute ('src','imagens/shogun-js-pc.jpg')
     }
+
+    }
+
     function ventiav(){
         
     }
-    /*else if(vel <2000 && vel >=1500 reg<250 && reg>=200 )*/ 
+    /*else if(vel <2000 && vel >=1500  reg<250 && reg>=200 )*/ 
