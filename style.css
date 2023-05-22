@@ -63,3 +63,6 @@ main p{
     padding: 20px;
     font-weight: normal;
 }
+a{
+    text-decoration: none;
+}
