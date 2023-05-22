@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="icone/George-Ui-Ancient-Legend-Books-Library.ico" type="image/x-icon">
-    <link rel="stylesheet" href="paleta.css">
+    <link rel="stylesheet" href="style.css">
     <title>Buids</title>
     <style>
         #ress{
@@ -26,7 +26,7 @@
         </header>
         <article>
             <h2></h2>
-            <section>
+            <!--<section>
                 <h2>VAMOS AVALIAR SEU VENTI:</h2>
                 <P>DANO BASICO</P>
                 <input type="text" value="Teste" id="ventidb">
@@ -34,9 +34,28 @@
 
                 </div>
                 <input type="button" value="ventiav">
-            </section>
+            </section>-->
             <section>
                 <h2>VAMOS AVALIAR SEU ZHONGLI:</h2>
+                <p>Vida</p>
+                <input type="number" value="parede" id="parede">
+                <p>TAXA CRITICA</p>
+                <input type="number" value="ztx" id="ztx">
+                <p>DANO CRITICO</p>
+                <input type="number" value="zdnc" id="zdnc">
+                <p>BONUS GEO</p>
+                <input type="number" value="geo" id="zgeo">
+
+                <div id="zparede">
+                </div>
+                <div id="ztaxac">
+                </div>
+                <div id="zdanoc">
+                </div>
+                <div id="bonusg">
+                </div>
+                <input type="button" value="Iniciar Avaliação" onclick="zcalcular()" id="botao">
+                
             </section>
             <section id="eletrica">
                 
