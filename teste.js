@@ -1,4 +1,47 @@
-
+function zcalcular(){
+    var vida = document.querySelector ('input#parede')
+    var zres = document.querySelector('div#zparede')
+    var vid = Number(vida.value)
+    zres.innerHTML = `<h2> ${vid} Vida </h2>`
+    if (vid >= 50000){
+        zres.innerHTML += `<p>Ele esta sendo uma perfeita representação da muralha da china,muito bem </p>`
+    } else if (vid < 50000 && vid >= 30000){
+    zres.innerHTML += `<p>Esta ok para um zhongli do tipo <strong>híbrido</strong>, mas se seu foco for o escudo é indicado aumentar para 50000 de vida</p>`
+    }else{
+        zres.innerHTML += `<p>Esta muito baixo sua vida mesmo que seja um híbrido é indicado pelo menos 30.000 de vida</p>`
+    }
+    var ztax = document.getElementById ('ztx')
+    var ztx = document.getElementById('ztaxac')
+    var tax = Number(ztax.value)
+    ztx.innerHTML = `<h2>Taxa critica: ${tax}%</h2>` 
+    if (tax > 60){
+        ztx.innerHTML += `<p>Esta perfeito parabéns pelo esforço</p>`
+    }else if (tax < 60 && tax > 50){
+        ztx.innerHTML += `<p>Esta bom principalmente se ele tiver com 30.000 de vida ou mais.</p>`
+    }else {
+        ztx.innerHTML += `<p>Para um zhongli focado em seu escudo não á problema, mas para um zhongli hibrido é indicado no minimo 50% de taxa critica.</p>`
+    }
+    var zdnc = document.getElementById('zdnc')
+    var zdanoc = document.getElementById ('zdanoc')
+    var dnc = Number (zdnc.value)
+    zdanoc.innerHTML = `<h2>Dano critico ${dnc}</h2>`
+    if(dnc >140){
+        zdanoc.innerHTML += '<p>Esta otimo,vejo que é alguem esforçado</p>'
+    }else if (dnc <140 && dnc>100){
+        zdanoc.innerHTML += 'Está bom principalmente se estiver com  30.000 de vida ou mais.'
+    }else{
+        zdanoc.innerHTML += '<p>Não é um status que seja necessario para o Zhongli focado em escudo, mas para o Hibrido é indicado no minimo 100% de Dano critico</p>'
+    }
+    var zgeo = document.getElementById ('zgeo')
+    var bonusg = document.getElementById ('bonusg')
+    var geo = Number(zgeo.value)
+    bonusg.innerHTML = `<h2>Bônus geo ${geo}</h2>`
+    if(geo > 60){
+        bonusg.innerHTML += '<p>Esta otimo um tipico Zhongli focado em seu dano geo</p>'
+    }else{
+        bonusg.innerHTML += '<p> Um zhongli focado em escudo não tem qualquer necessidade de Bônus Geo.</p>'
+    }
+}
 
 function calcular() {
     var txtv = document.querySelector('input#txtvel')
@@ -7,7 +50,7 @@ function calcular() {
     var img = document.getElementById ('shogun')
     var seletor = document.getElementById ('eletrica')
     
-    res.innerHTML = `<h2>Sua shogun tem ${vel}</h2>`
+    res.innerHTML = `<h2>Sua shogun tem ${vel} de dano critico</h2>`
     if (vel >= 2000){
         res.innerHTML += `<p>está perfeita,parabéns pela sua deticação</p>`
     }else if(vel <2000 && vel >= 1600){
