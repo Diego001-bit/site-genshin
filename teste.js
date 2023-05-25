@@ -2,6 +2,7 @@ function zcalcular(){
     var vida = document.querySelector ('input#parede')
     var zres = document.querySelector('div#zparede')
     var vid = Number(vida.value)
+    var img = document.getElementById('zhongli')
     zres.innerHTML = `<h2> ${vid} Vida </h2>`
     if (vid >= 50000){
         zres.innerHTML += `<p>Ele esta sendo uma perfeita representação da muralha da china,muito bem </p>`
@@ -28,7 +29,7 @@ function zcalcular(){
     if(dnc >140){
         zdanoc.innerHTML += '<p>Esta otimo,vejo que é alguem esforçado</p>'
     }else if (dnc <140 && dnc>100){
-        zdanoc.innerHTML += 'Está bom principalmente se estiver com  30.000 de vida ou mais.'
+        zdanoc.innerHTML += '<p>Está bom principalmente se estiver com  30.000 de vida ou mais.</p>'
     }else{
         zdanoc.innerHTML += '<p>Não é um status que seja necessario para o Zhongli focado em escudo, mas para o Hibrido é indicado no minimo 100% de Dano critico</p>'
     }
@@ -36,10 +37,17 @@ function zcalcular(){
     var bonusg = document.getElementById ('bonusg')
     var geo = Number(zgeo.value)
     bonusg.innerHTML = `<h2>Bônus geo ${geo}</h2>`
-    if(geo > 60){
+    if(geo >= 60){
         bonusg.innerHTML += '<p>Esta otimo um tipico Zhongli focado em seu dano geo</p>'
     }else{
         bonusg.innerHTML += '<p> Um zhongli focado em escudo não tem qualquer necessidade de Bônus Geo.</p>'
+    }
+    if(vid >= 50000){
+        img.setAttribute('src','imagens/r_030.jpg')
+    }else if (vid >= 30000 && tax >=60 && tax>50 && dnc>=140 && dnc>100 || geo > 60){
+        img.setAttribute('src','imagens/zhongli-cll.jpg')
+    }else{
+        img.setAttribute('src','imagens/zhongli.jpg')
     }
 }
 
@@ -48,7 +56,6 @@ function calcular() {
     var res = document.querySelector('div#res')
     var vel = Number(txtv.value)
     var img = document.getElementById ('shogun')
-    var seletor = document.getElementById ('eletrica')
     
     res.innerHTML = `<h2>Sua shogun tem ${vel} de dano critico</h2>`
     if (vel >= 2000){
