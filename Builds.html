@@ -25,7 +25,6 @@
             </nav>
         </header>
         <article>
-            <h2></h2>
             <!--<section>
                 <h2>VAMOS AVALIAR SEU VENTI:</h2>
                 <P>DANO BASICO</P>
@@ -37,14 +36,14 @@
             </section>-->
             <section>
                 <h2>VAMOS AVALIAR SEU ZHONGLI:</h2>
-                <p>Vida</p>
-                <input type="number" value="parede" id="parede">
-                <p>TAXA CRITICA</p>
-                <input type="number" value="ztx" id="ztx">
-                <p>DANO CRITICO</p>
-                <input type="number" value="zdnc" id="zdnc">
-                <p>BONUS GEO</p>
-                <input type="number" value="geo" id="zgeo">
+                <p class="sub">Vida</p>
+                <p class="retangulo"><input type="number" value="parede" id="parede"></p>
+                <p class="sub"> TAXA CRITICA</p>
+                <p class="retangulo"><input type="number" value="ztx" id="ztx"></p>
+                <p class="sub">DANO CRITICO</p>
+                <p class="retangulo"><input type="number" value="zdnc" id="zdnc"></p>
+                <p class="sub">BONUS GEO</p>
+                <p class="retangulo"><input type="number" value="geo" id="zgeo"></p>
 
                 <div id="zparede">
                 </div>
@@ -54,23 +53,21 @@
                 </div>
                 <div id="bonusg">
                 </div>
-                <input type="button" value="Iniciar Avaliação" onclick="zcalcular()" id="botao">
+                <div class="bt"><input type="button" value="Iniciar Avaliação" onclick="zcalcular()" id="botao"></div>
                 <img src="" alt="" id="zhongli">
                 
             </section>
             <section id="eletrica">
                 
-                <h2>Vamos AVALIAR SUA RAIDEN SHOGUN:</h2>
-                    <p>DANO BASICO</p>
-                     <input type="number" value="txtvel" id="txtvel">
-                    <p>RECARGA DE ENERGIA:</p>
-                    <input type="number" value="recarga" id="recarga">
-                
-                    <p>TAXA CRITICA</p>
-                    <input type="number" value="taxac" id="taxac">
-
-                    <p>DANO CRITICO</p>
-                    <input type="number" value="danoc" id="danoc">
+                <h2>VAMOS AVALIAR SUA RAIDEN SHOGUN:</h2>
+                    <p class="sub">DANO BASICO</p> 
+                    <p class="retangulo"><input type="number" value="txtvel" id="txtvel"></p>
+                    <p class="sub">RECARGA DE ENERGIA:</p>
+                    <p class="retangulo"><input type="number" value="recarga" id="recarga"></p>
+                    <p class="sub">TAXA CRITICA</p>
+                    <p class="retangulo"><input type="number" value="taxac" id="taxac"></p>
+                    <p class="sub">DANO CRITICO</p>
+                    <p class="retangulo"><input type="number" value="danoc" id="danoc"></p>
                 
                     <div id="res">
                     </div>
@@ -81,7 +78,7 @@
                     <div id="danocri">
 
                     </div>
-                    <input type="button" value="Iniciar Avaliação" onclick="calcular()" id="botao">
+                    <div class="bt"><input type="button" value="Iniciar Avaliação" onclick="calcular()" id="botao"></div>
                     <img src="" alt="" id="shogun">
                        
             </section>

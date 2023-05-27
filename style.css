@@ -66,3 +66,48 @@ main p{
 a{
     text-decoration: none;
 }
+article {
+    margin: auto;
+    max-width: 800px;
+    min-width: 300px;
+    text-align: justify;
+    padding-left: 10px;
+    background-color: white;
+}
+body{
+    background-image: linear-gradient(to right,var(--cor5),var(--cor2),var(--cor3));
+}
+article h2{
+    font-family: var(--romanus);
+    padding: 20px 0px;
+}
+.sub{
+    background: var(--cor1);
+    display: inline;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px 5px 0px 0px;
+}
+.retangulo{
+    background-color: var(--cor5);
+    max-width: 250px;
+    margin-bottom: 30px;
+    text-indent: none;
+    border-radius: 0px 5px 5px 4px;
+    
+}
+
+input {
+    display: inline;
+    background-color: var(--Cinzelh2);
+    color: white;
+    padding: 5px;
+}
+.bt{
+    background-color: red;
+    display: inline;
+    padding: 4px 0px 5px 1px;
+}
+img{
+    display: block;
+}
