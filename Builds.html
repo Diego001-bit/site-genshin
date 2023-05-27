@@ -45,7 +45,24 @@
                 <p class="retangulo"><input type="number" value="zdnc" id="zdnc"></p>
                 <p class="sub">BONUS GEO</p>
                 <p class="retangulo"><input type="number" value="geo" id="zgeo"></p>
-
+                <div class="bt"><input type="button" value="Iniciar Avaliação" onclick="zcalcular()" id="botao"></div>
+                <br>
+                <table>
+                    <tr id="titulo">
+                        <td class="tt">VIDA</td>
+                        <td class="tt">TAXA CRITICA</td>
+                        <td class="tt">DANO CRITICO</td>
+                        <td class="tt">BÔNUS GEO</td>
+                    </tr>
+                    <tr>
+                        <td id="zv"></td>
+                        <td id="zt"></td>
+                        <td id="zd"></td>
+                        <td id="bo"></td>
+                    </tr>
+                </table>
+                <img src="" alt="" id="zhongli">
+                
                 <div id="zparede">
                 </div>
                 <div id="ztaxac">
@@ -54,10 +71,8 @@
                 </div>
                 <div id="bonusg">
                 </div>
-                <div class="bt"><input type="button" value="Iniciar Avaliação" onclick="zcalcular()" id="botao"></div>
-                <img src="" alt="" id="zhongli">
-                
             </section>
+            
             <section id="eletrica">
                 
                 <h2>VAMOS AVALIAR SUA RAIDEN SHOGUN:</h2>
@@ -69,8 +84,21 @@
                     <p class="retangulo"><input type="number" value="taxac" id="taxac"></p>
                     <p class="sub">DANO CRITICO</p>
                     <p class="retangulo"><input type="number" value="danoc" id="danoc"></p>
-                    </div>
-                    
+                    <table>
+                        <tr id="titulo">
+                            <td class="tt">DANO BASICO</td>
+                            <td class="tt">RECARGA DE ENERGIA</td>
+                            <td class="tt">TAXA CRITICA</td>
+                            <td class="tt">DANO CRITICO</td>
+                        </tr>
+                        <tr>
+                            <td id="db"></td>
+                            <td id="rg"></td>
+                            <td id="stx"></td>
+                            <td id="sdn"></td>
+                        </tr>
+                    </table>
+                    <br>
                     <div class="bt"><input type="button" value="Iniciar Avaliação" onclick="calcular()" id="botao"></div>
                     <img src="" alt="" id="shogun">
                     <div id="res">
