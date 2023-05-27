@@ -112,7 +112,7 @@ function calcular() {
     }else {
         img.setAttribute ('src','imagens/shogun-js-pc.jpg')
     }
-
     }
+    
 }
     /*else if(vel <2000 && vel >=1500  reg<250 && reg>=200 )*/ 
