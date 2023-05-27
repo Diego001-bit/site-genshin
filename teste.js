@@ -35,12 +35,12 @@ function zcalcular(){
     }else if (dnc <140 && dnc>100){
         zdanoc.innerHTML += '<p>Está bom principalmente se estiver com  30.000 de vida ou mais.</p>'
     }else{
-        zdanoc.innerHTML += `<p>Não é um status que seja necessario para o Zhongli focado em escudo, mas para o Hibrido é indicado ter mais ${dme}% Dano critico</p>`
+        zdanoc.innerHTML += `<p>Não é um status que seja necessario para o Zhongli focado em escudo, mas para o Hibrido é indicado ter mais de ${dme}% Dano critico</p>`
     }
     var zgeo = document.getElementById ('zgeo')
     var bonusg = document.getElementById ('bonusg')
     var geo = Number(zgeo.value)
-    bonusg.innerHTML = `<h2>Bônus geo ${geo}</h2>`
+    bonusg.innerHTML = `<h2>Bônus geo ${geo}%</h2>`
     if(geo >= 60){
         bonusg.innerHTML += '<p>Esta otimo um tipico Zhongli focado em seu dano geo</p>'
     }else{
@@ -49,7 +49,7 @@ function zcalcular(){
     if(vid >= 50000){
         img.setAttribute('src','imagens/r_030.jpg')
     }else if (vid >= 30000 && tax >=60 && tax>50 && dnc>=140 && dnc>100 || geo > 60){
-        img.setAttribute('src','imagens/zhongli-cll.jpg')
+        img.setAttribute('src','imagens/zhongli-pc.jpg')
     }else{
         img.setAttribute('src','imagens/zhongli.jpg')
     }
@@ -67,7 +67,7 @@ function calcular() {
     }else if(vel <2000 && vel >= 1600){
         res.innerHTML += `<p>Esta rasoavel,mas pode vim a trazer dificuldades no abismos,esta faltando ${met} de dano basico</p>`
     }else if(vel < 1600) {
-        res.innerHTML += `<p>Esta fraca,é possivel jogar normalmente mas a dificulda aumenta de modo imprevisivel,é indicado aumentar mais ${met} de dano basico</p>`
+        res.innerHTML += `<p>Esta fraca,é possivel jogar normalmente mas a dificulda aumenta de modo imprevisivel,é indicado aumentar ${met} de dano basico</p>`
     }
     var rec = document.querySelector('input#recarga')
     var ener = document.querySelector('div#energia')
@@ -89,20 +89,20 @@ function calcular() {
     if(tax > 60){
         taxa.innerHTML += '<p>Esta perfeita,vejo que é alguem muito esforçado</p>'
     }else if(tax <60 && tax >= 50){
-        taxa.innerHTML += '<p>Esta usual,mesmo assim o recomendado é 70%</p>'
+        taxa.innerHTML += '<p>Esta usual,mesmo assim o recomendado é 70%.</p>'
     }else if(tax < 50){
-        taxa.innerHTML += `<p>Em casos aonde o personagem é focado em causar dano enquanto estiver com o supremo ativo como a shogun,eu aconselho em buscar mais <strong>${tme}</strong> de taxa critica</p>`
+        taxa.innerHTML += `<p>Em casos aonde o personagem é focado em causar dano enquanto estiver com o supremo ativo como a shogun,eu aconselho em buscar mais <strong>${tme}</strong> de taxa critica.</p>`
     var danocritico = document.querySelector ('input#danoc')
     var dano = document.querySelector('div#danocri')
     var dan = Number (danocritico.value)
     var dme = Number(100-danocritico.value)
     dano.innerHTML = `<h2>Sua shogun tem ${dan}% de Dano critico</h2>`
     if(dan >=150){
-        dano.innerHTML += '<p>Esta perfeita ela esta digna de ser chamada de arconte</p>'
+        dano.innerHTML += '<p>Esta perfeita ela esta digna de ser chamada de arconte.</p>'
     }else if(dan < 150 && dan >=100){
-        dano.innerHTML += '<p>Esta usual,mas causo sinta dificuldade é indicado aumentar seu dano critico</p>'
+        dano.innerHTML += '<p>Esta usual,mas causo sinta dificuldade é indicado aumentar seu dano critico.</p>'
     }else if(dan <100){
-        dano.innerHTML += `<p>Ela necessita de mais Dano critico, é indicado aumentar em<strong>${dme}%</strong> seu dano critico</p>`
+        dano.innerHTML += `<p>Ela necessita de mais Dano critico, é indicado aumentar em<strong>${dme}%</strong> seu dano critico.</p>`
     }
     
     if (vel >= 2000 && reg >=250 == tax > 60 && dan >= 150){

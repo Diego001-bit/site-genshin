@@ -78,8 +78,13 @@ body{
     background-image: linear-gradient(to right,var(--cor5),var(--cor2),var(--cor3));
 }
 article h2{
-    font-family: var(--romanus);
-    padding: 20px 0px;
+    font-family: var(--fonte-destaque);
+    margin-left: -10px;
+    padding: 20px 20px;
+    font-size: 2em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 .sub{
     background: var(--cor1);
@@ -110,4 +115,6 @@ input {
 }
 img{
     display: block;
+    max-width: 100%;
+    margin: auto;
 }
