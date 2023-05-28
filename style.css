@@ -127,6 +127,8 @@ td{
     font-weight: bolder;
     font-size: 1.0em;
     margin: auto;
+ 
+    
     
     
 }
@@ -139,7 +141,6 @@ td{
 tr{
     text-align: justify;
     max-width: 100%;
-    padding: 10px;
 }
 
 img{
