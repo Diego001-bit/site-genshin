@@ -140,11 +140,154 @@ td{
 
 tr{
     text-align: justify;
-    max-width: 100%;
 }
 
 img{
     display: block;
     max-width: 100%;
     margin: auto;
+}
+
+    
+@media screen and (max-width: 580px){
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap');
+@font-face {
+    font-family: 'romanus';
+    src: url(fontes/ROMANUS.otf);
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+:root{
+    --cor1 :#7b82e063;
+    --cor2 :#000DC7;
+    --cor3 :#000994;
+    --cor4 :#171A47;
+    --cor5 :#000547;
+    --Padrão:Arial, Helvetica, sans-serif;
+    --Cinzelh2: 'Cinzel', serif;
+    --romanus:'romanus',serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
+header {
+    color: white;
+    background-image: linear-gradient(to bottom,var(--cor2),var(--cor3),var(--cor5));
+    background-image: url('imagens/imgfundo2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 5px;
+}
+header h1{
+    font-family: var(--fonte-destaques);
+    text-align: center;
+    line-height: 2em;
+    font-size: 2em;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+header p{
+    text-align: justify;
+    font-size: 0.80em;
+    margin: auto;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.123);
+}
+nav a{
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    font-family: var(--Padrão);
+    font-weight: bold;
+}
+nav a:hover{
+    background-color:#7b82e063;
+    transition-duration: 1s;
+}
+main p{
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 0.90em;
+    font-family: var(--Padrão);
+    padding: 10px;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+}
+article {
+    margin: auto;
+    max-width: 800px;
+    min-width: 300px;
+    text-align: justify;
+    padding-left: 10px;
+    background-color: white;
+}
+
+article h2{
+    font-family: var(--fonte-destaque);
+    margin-left: -10px;
+    padding: 20px 20px;
+    font-size: 1.8em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.sub{
+    background: var(--cor1);
+    display: inline;
+    padding: 7px;
+    margin-top: 30px;
+    border-radius: 5px 5px 0px 0px;
+}
+.retangulo{
+    background-color: var(--cor5);
+    max-width: 250px;
+    margin-bottom: 20px;
+    text-indent: none;
+    border-radius: 0px 5px 5px 4px;
+    
+}
+
+input {
+    display: inline;
+    background-color: var(--Cinzelh2);
+    color: white;
+    padding: 2px;
+}
+.bt{
+    background-color: red;
+    display: inline;
+    padding: 2px 0px 3px 1px;
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 10px;
+    padding: 100%;
+}
+td {
+    border: 1px solid black;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: var(--Padrão);
+    font-weight: bolder;
+    font-size: 0.87em;
+    margin: auto;
+}
+#titulo{
+    background-color: var(--cor1);
+    font-family: var(--romanus);
+    font-size: 1.2em;
+}
+
+
+img{
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+    
 }

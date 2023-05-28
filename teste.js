@@ -96,7 +96,7 @@ function calcular() {
     if(tax > 60){
         taxa.innerHTML = '<p>Esta perfeita,vejo que é alguem muito esforçado</p>'
     }else if(tax <60 && tax >= 50){
-        taxa.innerHTML += '<p>Esta usual,mesmo assim o recomendado é 70%.</p>'
+        taxa.innerHTML = '<p>Esta usual,mesmo assim o recomendado é 70%.</p>'
     }else if(tax < 50){
         taxa.innerHTML = `<p>Em casos aonde o personagem é focado em causar dano enquanto estiver com o supremo ativo como a shogun,eu aconselho em buscar mais <strong>${tme}%</strong> de taxa critica.</p>`
     var danocritico = document.querySelector ('input#danoc')
