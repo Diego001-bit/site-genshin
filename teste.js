@@ -12,7 +12,7 @@ function zcalcular(){
     } else if (vid < 50000 && vid >= 30000){
     zres.innerHTML = `<p>Esta ok para um zhongli do tipo <strong>híbrido</strong>, mas se seu foco for o escudo é indicado aumentar em ${met} de vida.</p>`
     }else{
-        zres.innerHTML = `<p>Esta muito baixo sua vida mesmo que seja um híbrido é indicado pelo menos 30.000 de vida esta faltando ${me} e para um zhongli focado em escudo precisa de ${met} de vida</p>`
+        zres.innerHTML = `<p>Esta muito baixo sua vida mesmo que seja um híbrido é indicado pelo menos 30.000 de vida esta faltando ${me} e para um zhongli focado em escudo é necessario aumentar em ${met} de vida</p>`
     }
     var ztax = document.getElementById ('ztx')
     var ztx = document.getElementById('ztaxac')
@@ -52,9 +52,9 @@ function zcalcular(){
     }
     if(vid >= 50000){
         img.setAttribute('src','imagens/r_030.jpg')
-    }else if (vid >= 30000 && tax >=60 && tax>50 && dnc>=140 && dnc>100 || geo > 60){
+    }else if (vid >= 30000 && tax >=60 && tax>50 == dnc>=140 && dnc>100 && geo > 60){
         img.setAttribute('src','imagens/zhongli-pc.jpg')
-    }else{
+    }else {
         img.setAttribute('src','imagens/zhongli.jpg')
     }
 }
