@@ -35,8 +35,8 @@ function zcalcular(){
     zd.innerHTML = `<div>${dnc}%</div>`
     if(dnc >140){
         zdanoc.innerHTML = '<p>Esta otimo,vejo que é alguem esforçado</p>'
-    }else if (dnc <140 && dnc>100){
-        zdanoc.innerHTML = '<p>Está bom principalmente se estiver com  30.000 de vida ou mais.</p>'
+    }else if (dnc <140 && dnc >=100){
+        zdanoc.innerHTML = '<p>Está bom principalmente se for um hibrido.</p>'
     }else{
         zdanoc.innerHTML = `<p>Não é um status que seja necessario para o Zhongli focado em escudo, mas para o Hibrido é indicado ter mais de ${dme}% Dano critico</p>`
     }
@@ -52,7 +52,7 @@ function zcalcular(){
     }
     if(vid >= 50000){
         img.setAttribute('src','imagens/r_030.jpg')
-    }else if (vid >= 30000 && tax >=60 && tax>50 == dnc>=140 && dnc>100 && geo > 60){
+    }else if (vid >= 30000 && tax>=50 && dnc>=140 || dnc>=100 && geo >= 60){
         img.setAttribute('src','imagens/zhongli-pc.jpg')
     }else {
         img.setAttribute('src','imagens/zhongli.jpg')
@@ -99,11 +99,12 @@ function calcular() {
         taxa.innerHTML = '<p>Esta usual,mesmo assim o recomendado é 70%.</p>'
     }else if(tax < 50){
         taxa.innerHTML = `<p>Em casos aonde o personagem é focado em causar dano enquanto estiver com o supremo ativo como a shogun,eu aconselho em buscar mais <strong>${tme}%</strong> de taxa critica.</p>`
-    var danocritico = document.querySelector ('input#danoc')
+    }
+    var danocritico = document.getElementById('danoc')
     var dano = document.querySelector('div#danocri')
     var dc = document.getElementById('sdn')
     var dan = Number (danocritico.value)
-    var dme = Number(100-danocritico.value)
+    var dme = Number(100-dan)
     dc.innerHTML = `<div>${dan}%</div>`
     if(dan >=150){
         dano.innerHTML = '<p>Esta perfeita ela esta digna de ser chamada de arconte.</p>'
@@ -113,14 +114,12 @@ function calcular() {
         dano.innerHTML = `<p>Ela necessita de mais Dano critico, é indicado aumentar em<strong>${dme}%</strong> seu dano critico.</p>`
     }
     
-    if (vel >= 2000 && reg >=250 == tax > 60 && dan >= 150){
+    if (vel >= 2000 && reg >=250 && tax > 60 && dan >= 150){
         img.setAttribute ('src','imagens/raid-pc.jpg')
-    }else if (vel >= 2000 || vel < 2000 && vel >= 1600 && reg >=250 || reg <250 && reg >= 200 ||  tax > 60 || tax <60 && tax >= 50 && dan > 150 || dan <150 && dan > 100){
+    }else if ( vel < 2000 && vel >= 1600  || reg <250 && reg >= 200 ||  tax > 60 && tax >= 50 && dan > 150){
         img.setAttribute ('src','imagens/shogun-js-pc2.jpg')
     }else {
         img.setAttribute ('src','imagens/shogun-js-pc.jpg')
     }
     }
-    
-}
     /*else if(vel <2000 && vel >=1500  reg<250 && reg>=200 )*/ 
