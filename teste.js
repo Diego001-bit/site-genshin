@@ -111,7 +111,7 @@ function calcular() {
     }else if(dan < 150 && dan >=100){
         dano.innerHTML = '<p>Esta usual,mas causo sinta dificuldade é indicado aumentar seu dano critico.</p>'
     }else if(dan <100){
-        dano.innerHTML = `<p>Ela necessita de mais Dano critico, é indicado aumentar em<strong>${dme}%</strong> seu dano critico.</p>`
+        dano.innerHTML = `<p>Ela necessita de mais Dano critico, é indicado aumentar em <strong>${dme}%</strong> seu dano critico.</p>`
     }
     
     if (vel >= 2000 && reg >=250 && tax > 60 && dan >= 150){
