@@ -26,14 +26,30 @@
         </header>
         <article>
             
-                <h2>VAMOS AVALIAR SEU VENTI:</h2>
-                <P>DANO BASICO</P>
-                <input type="text" value="Teste" id="ventidb">
+                <section>
+                    <h2>VAMOS AVALIAR SEU VENTI:</h2>
+                    <P class="sub">PROFICIÊNCIA</P>
+                    <p class="retangulo"><input type="number" value="venti" id="ventidb"></p>
+                    <P class="sub">RECARGA DE ENERGIA</P>
+                    <p class="retangulo"><input type="number" value="ventireg" id="ventireg"></p>
 
-                <div id="vendb">
-                </div>
+                    <table>
+                        <tr class="titulo">
+                            <td class="tt">PROFICIÊNCIA</td>
+                            <td class="tt">RECARGA DE ENERGIA</td>
+                        </tr>
+                        <tr>
+                            <td id="vp"></td>
+                            <td id="vr"></td>
+                        </tr>
+                    </table>
+                    <div id="vendb">
+                    </div>
+                    <div id="venreg"></div>
+                </section>
 
-                <div class="bt"><input type="button" value="Iniciar Avaliação"></div>
+                <div class="bt"><input type="button" value="Iniciar Avaliação" onclick="ventilador()"></div>
+                <img src="" alt="" id="venti">
                 
             <section>
                 <h2>VAMOS AVALIAR SEU ZHONGLI:</h2>
@@ -48,7 +64,7 @@
                 
                 <br>
                 <table>
-                    <tr id="titulo">
+                    <tr class="titulo">
                         <td class="tt">VIDA</td>
                         <td class="tt">TAXA CRITICA</td>
                         <td class="tt">DANO CRITICO</td>
@@ -86,7 +102,7 @@
                     <p class="sub">DANO CRITICO</p>
                     <p class="retangulo"><input type="number" value="danoc" id="danoc"></p>
                     <table>
-                        <tr id="titulo">
+                        <tr class="titulo">
                             <td class="tt">DANO BASICO</td>
                             <td class="tt">RECARGA DE ENERGIA</td>
                             <td class="tt">TAXA CRITICA</td>
@@ -115,11 +131,22 @@
             </section>
             <section>
                 <h2>VAMOS AVALIAR SUA NAHIDA</h2>
-            </section>
+                <p class="sub">PROFICIÊNCIA</p>
+                <p class="retangulo"><input type="number" value="prof" id="prof"></p>
+                <p class="sub">TAXA CRITICA</p>
+                <p class="retangulo"><input type="number" value="txnahida" id="txnahida"></p>
+                <p class="sub">DANO CRITICO</p>
+                <p class="retangulo"><input type="number" value="dnnahida" id="dnnahida"></p>
+                <div class="bt"><input type="button" value="Iniciar Avaliação" onclick="boran()" ></div>
+            
+            <div id="napf"></div>
+            <div id="natx"></div>
+            <div id="nadc"></div>
+        </section>
         </article>
     </main>
     <footer>
-        
+        <p>Site desenvolvido por <a href="" id="autor">Diego Bezerra</a></p>
     </footer>
     <script src="teste.js"></script>
     

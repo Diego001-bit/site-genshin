@@ -1,3 +1,47 @@
+function ventilador(){
+    var venb = document.getElementById('ventidb')
+    var vtabela = document.getElementById('vp')
+    var vdoc = document.getElementById ('vendb')
+    var img = document.getElementById('venti')
+    var venp =Number (venb.value)
+    var v = Number(700-venp)
+    vtabela.innerHTML= `<div>${venp}</div>`
+    if (venp >= 700){
+        vdoc.innerHTML =''
+        vdoc.innerHTML += `<p>Esta exelente parabéns pelo esforço</p>`
+    }else if (venp < 700 && venp >=500){
+        vdoc.innerHTML = ``
+        vdoc.innerHTML += `<p>Esta usual,apesar que o indicado seja mais ${v} de proificiencia</p>`
+
+    }else{
+        vdoc.innerHTML = ` `
+        vdoc.innerHTML += `<p>Esta com pouco proificiência,visto a capacitade dele em reações elementais é necessario no minimo 500 de proificiencia</p>`
+    }
+    var venr = document.getElementById('ventireg')
+    var vt = document.getElementById ('vr')
+    var vend = document.getElementById ('venreg')
+    var vrr = Number(venr.value)
+    var val = Number(120-vrr) 
+    vt.innerHTML =`${vrr}%`
+    if (vrr>=150){
+        vend.innerHTML =``
+        vend.innerHTML += `<p>Esta exelente, vejo que é uma pessoa dedicada</p>`
+    }else if(vrr <150 && vrr >=120){
+        vend.innerHTML =``
+        vend.innerHTML += `<p>${vrr}% De recarga não é ruim,mas se tiver demorando para soltar a habilidade suprema é indicado aumentar</p>`
+    }else{
+        vend.innerHTML =``
+        vend.innerHTML +=`<p>Esta muito baixo,é indicado buscar mais ${val}% de recarga de energia</p>` 
+    }
+
+    if(vdoc>= 700 || vdoc > 500 || vrr >=150 || vrr >120){
+        img.setAttribute ('src','imagens/venti-pc.jpg')
+    }else{
+        img.setAttribute('src','imagens/venti-pq.jpg')
+    }
+    
+}
+
 function zcalcular(){
     var vida = document.querySelector ('input#parede')
     var zres = document.querySelector('div#zparede')
@@ -10,9 +54,9 @@ function zcalcular(){
     if (vid >= 50000){
         zres.innerHTML = `<p>Ele esta sendo uma perfeita representação da muralha da china,muito bem </p>`
     } else if (vid < 50000 && vid >= 30000){
-    zres.innerHTML = `<p>Esta ok para um zhongli do tipo <strong>híbrido</strong>, mas se seu foco for o escudo é indicado aumentar em ${met} de vida.</p>`
+    zres.innerHTML = `<p>Esta ok para um zhongli do tipo <strong>híbrido</strong>, mas se seu foco for o escudo é indicado aumentar em <strong>${met}</strong> de vida.</p>`
     }else{
-        zres.innerHTML = `<p>Esta muito baixo sua vida mesmo que seja um híbrido é indicado pelo menos 30.000 de vida esta faltando ${me} e para um zhongli focado em escudo é necessario aumentar em ${met} de vida</p>`
+        zres.innerHTML = `<p>Esta muito baixo sua vida mesmo que seja um híbrido é indicado pelo menos 30.000 de vida,esta faltando <strong>${me}</strong> e para um zhongli focado em escudo é necessario aumentar em <strong>${met}</strong> de vida</p>`
     }
     var ztax = document.getElementById ('ztx')
     var ztx = document.getElementById('ztaxac')
@@ -25,7 +69,7 @@ function zcalcular(){
     }else if (tax < 60 && tax >= 50){
         ztx.innerHTML = `<p>Esta bom principalmente se ele tiver com 30.000 de vida ou mais.</p>`
     }else {
-        ztx.innerHTML = `<p>Para um zhongli focado em seu escudo não á problema, mas para um zhongli hibrido é indicado mais ${tme} de taxa critica.</p>`
+        ztx.innerHTML = `<p>Para um zhongli focado em seu escudo não á problema, mas para um zhongli hibrido é indicado mais <strong>${tme}%</strong> de taxa critica.</p>`
     }
     var zdnc = document.getElementById('zdnc')
     var zdanoc = document.getElementById ('zdanoc')
@@ -38,7 +82,7 @@ function zcalcular(){
     }else if (dnc <140 && dnc >=100){
         zdanoc.innerHTML = '<p>Está bom principalmente se for um hibrido.</p>'
     }else{
-        zdanoc.innerHTML = `<p>Não é um status que seja necessario para o Zhongli focado em escudo, mas para o Hibrido é indicado ter mais de ${dme}% Dano critico</p>`
+        zdanoc.innerHTML = `<p>Não é um status que seja necessario para o Zhongli focado em escudo, mas para o Hibrido é indicado ter mais de <strong>${dme}%</strong> Dano critico</p>`
     }
     var zgeo = document.getElementById ('zgeo')
     var bonusg = document.getElementById ('bonusg')
