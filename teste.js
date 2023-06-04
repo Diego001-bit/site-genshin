@@ -167,3 +167,39 @@ function calcular() {
     }
     }
     /*else if(vel <2000 && vel >=1500  reg<250 && reg>=200 )*/ 
+    function boran(){
+        var nprof =document.getElementById('prof')
+        var ndig = document.getElementById('napf')
+        var profn= Number(nprof.value)
+        var r = Number(700-profn)
+        if(profn>=700){
+            ndig.innerHTML =``
+            ndig.innerHTML += `<p>Está exelente,parabens pelo seu esforço</p>`
+        }else if(profn<700 &&profn >=600){
+            ndig.innerHTML =``
+            ndig.innerHTML += `<p>Está bom, mas é indicado aumentar mais ${r}  sua proificiencia</p>`
+        }else{
+            ndig.innerHTML = ''
+            ndig.innerHTML += `<p>Está com pouca proificiencia,visto que é um atributo essencial para ela, é necessario ter no minimo 600 de proificiencia</p>`
+        }
+        var txnahida = document.getElementById('txnahida')
+        var txn =Number(txnahida.value)
+        var re =Number(50-txn)
+        if(txn>=50){
+            ndig.innerHTML +=`<p>Está otima,vejo que é uma pessoa esforçada</p>`
+        }else if(txn <50 && txn > 40){
+            ndig.innerHTML +=`<p>Está ok mas o indicado é ter no minimo 50% de taxa </p>`
+        }else{
+            ndig.innerHTML +=`<p>Esta muito baixo a taxa critica,aconselho buscar mais ${re}% de taxa</p>`
+        }
+        var dnahida = document.getElementById('dnnahida')
+        var dnah = Number(dnahida.value)
+        var d = Number(140-dnah)
+        if(dnah >= 140){
+            ndig.innerHTML += `<p>Esta digna de ser chamada de arconde.</p>`
+        }else if(dnah<140 && dnah>=100){
+            ndig.innerHTML += `<p>Está mediana,causo sinta alguma dificuldade é indicado aumenta mais ${d}% de dano critico.</p>`
+        }else{
+            ndig.innerHTML+=`<p>Esta com pouco dano critico, é indicado aumentar em para pelo menos 100% de dano critico.</p>`
+        }
+    }
