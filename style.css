@@ -41,7 +41,7 @@ header p{
     text-align: justify;
     font-size: 1em;
     margin: auto;
-    max-width: 500px;
+    max-width: 1000px;
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.123);
 }
 nav a{
@@ -68,7 +68,7 @@ a{
 }
 article {
     margin: auto;
-    max-width: 800px;
+    max-width: 1000px;
     min-width: 300px;
     text-align: justify;
     padding-left: 10px;
@@ -124,7 +124,7 @@ table{
 }
 td{
     border: 1px solid black;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
     font-family: var(--Padrão);
     font-weight: bolder;
@@ -210,6 +210,7 @@ header h1{
 header p{
     text-align: justify;
     font-size: 0.80em;
+    max-width:500px;
     margin: auto;
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.123);
 }
@@ -291,7 +292,7 @@ td {
     padding-bottom: 20px;
     text-align: center;
     font-family: var(--Padrão);
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 0.87em;
     margin: auto;
 }

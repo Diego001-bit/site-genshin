@@ -158,9 +158,9 @@ function calcular() {
         dano.innerHTML = `<p>Ela necessita de mais Dano critico, é indicado aumentar em <strong>${dme}%</strong> seu dano critico.</p>`
     }
     
-    if (vel >= 2000 && reg >=250 && tax > 60 && dan >= 150){
+    if (vel >= 2000 && reg >=250 && tax > 60 && dan >= 140){
         img.setAttribute ('src','imagens/raid-pc.jpg')
-    }else if ( vel < 2000 && vel >= 1600  || reg <250 && reg >= 200 ||  tax > 60 && tax >= 50 && dan > 150){
+    }else if ( vel < 2000 && vel >= 1600  || reg <250 && reg >= 200 ||  tax >= 50 && dan > 100){
         img.setAttribute ('src','imagens/shogun-js-pc2.jpg')
     }else {
         img.setAttribute ('src','imagens/shogun-js-pc.jpg')
@@ -170,8 +170,11 @@ function calcular() {
     function boran(){
         var nprof =document.getElementById('prof')
         var ndig = document.getElementById('napf')
+        var img = document.getElementById('nahida')
         var profn= Number(nprof.value)
         var r = Number(700-profn)
+        var np = document.getElementById('np')
+        np.innerHTML = `${profn}`
         if(profn>=700){
             ndig.innerHTML =``
             ndig.innerHTML += `<p>Está exelente,parabens pelo seu esforço</p>`
@@ -182,9 +185,12 @@ function calcular() {
             ndig.innerHTML = ''
             ndig.innerHTML += `<p>Está com pouca proificiencia,visto que é um atributo essencial para ela, é necessario ter no minimo 600 de proificiencia</p>`
         }
+        
         var txnahida = document.getElementById('txnahida')
         var txn =Number(txnahida.value)
         var re =Number(50-txn)
+        var nt = document.getElementById('nt')
+        nt.innerHTML = `${txn}%`
         if(txn>=50){
             ndig.innerHTML +=`<p>Está otima,vejo que é uma pessoa esforçada</p>`
         }else if(txn <50 && txn > 40){
@@ -195,11 +201,20 @@ function calcular() {
         var dnahida = document.getElementById('dnnahida')
         var dnah = Number(dnahida.value)
         var d = Number(140-dnah)
+        var nd = document.getElementById ('nd')
+        nd.innerHTML =`${dnah}%`
         if(dnah >= 140){
             ndig.innerHTML += `<p>Esta digna de ser chamada de arconde.</p>`
         }else if(dnah<140 && dnah>=100){
             ndig.innerHTML += `<p>Está mediana,causo sinta alguma dificuldade é indicado aumenta mais ${d}% de dano critico.</p>`
         }else{
             ndig.innerHTML+=`<p>Esta com pouco dano critico, é indicado aumentar em para pelo menos 100% de dano critico.</p>`
+        }
+        if(profn > 600 && txn > 50 && dnah> 140){
+            img.setAttribute ('src','imagens/nahida-dendro-character-genshin.jpg')
+        }else if(profn > 600 || txn >= 50 || dnah> 100){
+            img.setAttribute ('src','imagens/nahida-pc.jpg')
+        }else{
+            img.setAttribute('src','imagens/dendro-archons-true-name-nahida.jpg')
         }
     }
