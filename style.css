@@ -288,6 +288,7 @@ table{
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: justify;
+    margin-left: -10px;
     
 }
 td {
@@ -299,7 +300,6 @@ td {
     font-size: 0.87em;
     margin: auto;
 }
-
 .titulo{
     background-color: var(--cor1);
     font-family: var(--romanus);
