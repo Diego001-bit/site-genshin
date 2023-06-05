@@ -131,10 +131,6 @@ td{
     font-weight: bolder;
     font-size: 1.0em;
     margin: auto;
- 
-    
-    
-    
 }
 .titulo{
     background-color: var(--cor1);
@@ -244,7 +240,6 @@ article {
     max-width: 1000px;
     min-width: 300px;
     text-align: justify;
-    padding-left: 5px;
     background-color: white;
 }
 
@@ -300,13 +295,13 @@ td {
     text-align: center;
     font-family: var(--Padrão);
     font-weight: bold;
-    font-size: 0.79em;
+    font-size: 0.89em;
     margin: auto;
 }
 
 .titulo{
     background-color: var(--cor1);
-    font-family: var(--romanus);
+    font-family: var(--Padrão);
     font-size: 1.2em;
 }
 
