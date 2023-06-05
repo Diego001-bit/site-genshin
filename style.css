@@ -239,8 +239,8 @@ a{
 }
 article {
     margin: auto;
-    max-width: 800px;
-    min-width: 400px;
+    max-width: 1000px;
+    min-width: 300px;
     text-align: justify;
     padding-left: 10px;
     background-color: white;
@@ -298,7 +298,7 @@ td {
     text-align: center;
     font-family: var(--Padrão);
     font-weight: bold;
-    font-size: 0.70em;
+    font-size: 0.79em;
     margin: auto;
 }
 
