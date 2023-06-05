@@ -239,10 +239,9 @@ a{
 article {
     margin: auto;
     max-width: 800px;
-    min-width: 300px;
+    min-width: 320px;
     text-align: justify;
     padding-left: 10px;
-    padding-right: 10px;
     background-color: white;
 }
 
@@ -289,6 +288,7 @@ table{
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: justify;
+    display: inline;
 }
 td {
     border: 1px solid black;
@@ -299,6 +299,7 @@ td {
     font-size: 0.87em;
     margin: auto;
 }
+
 .titulo{
     background-color: var(--cor1);
     font-family: var(--romanus);
