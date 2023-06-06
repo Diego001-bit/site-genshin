@@ -223,10 +223,10 @@ function calcular() {
         var hora = agora.getHours()
         let corpo =document.querySelector('body')
         if (hora>=6 && hora < 12){
-            corpo.style.background-image.url( 'imagens/Dia_ensolarado.jpg')
+            corpo.style.backgroundImage = "url(imagens/dia-ensolarado.jpg)"
         }else if(hora >= 12 && hora<18){
             corpo.style.backgroundImage = "url(imagens/por-do-sol.jpg)"
-        }else if(hora >=18 && hora <=24 || hora > 00 && hora < 6){
+        }else if(hora >=18 && hora <=24 || hora >= 00 && hora < 6){
             corpo.style.backgroundImage="url(imagens/noite.png)"
         }
     }
