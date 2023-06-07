@@ -210,7 +210,7 @@ function calcular() {
         }else{
             ndig.innerHTML+=`<p>Esta com pouco dano critico, é indicado aumentar em para pelo menos 100% de dano critico.</p>`
         }
-        if(profn > 600 && txn > 50 && dnah> 140){
+        if(profn >= 700 && txn >= 50 && dnah>= 140){
             img.setAttribute ('src','imagens/nahida-dendro-character-genshin.jpg')
         }else if(profn > 600 || txn >= 50 || dnah> 100){
             img.setAttribute ('src','imagens/nahida-pc.jpg')
