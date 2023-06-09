@@ -55,6 +55,7 @@ nav a:hover{
     background-color:#7b82e063;
     transition-duration: 1s;
 }
+
 main p{
     text-indent: 30px;
     line-height: 2em;
@@ -78,16 +79,17 @@ article {
     box-shadow: 3px 1px 9px rgba(0, 0, 0, 0.384);
 }
 body{
-    background-image: linear-gradient(to right,var(--cor5),var(--cor2),var(--cor3));
+    background-image: url('');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
 }
 article h2{
     font-family: var(--fonte-destaque);
     margin-left: -10px;
     padding: 20px 20px;
     font-size: 2em;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 }
 .sub{
     background: var(--cor1);
@@ -144,7 +146,7 @@ tr{
 
 img{
     display: block;
-    max-width: 100%;
+    max-width: 90%;
     margin: auto;
 }
 footer p{
@@ -164,7 +166,7 @@ footer p{
 
 
     
-@media screen and (max-width: 580px){
+@media screen and (max-width: 640px){
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap');
@@ -186,6 +188,9 @@ footer p{
     --Cinzelh2: 'Cinzel', serif;
     --romanus:'romanus',serif;
     --fonte-destaque: 'Bebas Neue', cursive;
+}
+body{
+    background-image: linear-gradient(to right,var(--cor5),var(--cor2),var(--cor3));
 }
 header {
     color: white;
@@ -291,6 +296,7 @@ table{
 td {
     border: 1px solid black;
     padding-bottom: 10px;
+    width: 500px;
     text-align: center;
     font-family: var(--Padrão);
     font-weight: bold;

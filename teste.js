@@ -218,3 +218,15 @@ function calcular() {
             img.setAttribute('src','imagens/dendro-archons-true-name-nahida.jpg')
         }
     }
+    function carregar(){
+        let agora = new Date()
+        var hora = agora.getHours()
+        let corpo =document.querySelector('body')
+        if (hora < 12){
+            corpo.style.background-image.url( 'imagens/Dia_ensolarado.jpg')
+        }else if(hora<=18){
+            corpo.style.backgroundImage = "url(imagens/por-do-sol.jpg)"
+        }else{
+            corpo.style.backgroundImage="url(imagens/noite.png)"
+        }
+    }

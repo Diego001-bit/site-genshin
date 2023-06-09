@@ -60,7 +60,11 @@ nav a:hover{
 
 }
 body{
-    background-image: linear-gradient(to right,var(--cor5),var(--cor2),var(--cor3));
+    background-image: url('');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
 }
 main img{
     min-width: 320px;
