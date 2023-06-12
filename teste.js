@@ -226,7 +226,7 @@ function calcular() {
             corpo.style.background-image.url( 'imagens/Dia_ensolarado.jpg')
         }else if(hora >= 12 && hora<18){
             corpo.style.backgroundImage = "url(imagens/por-do-sol.jpg)"
-        }else if(hora >18 && hora <=24 || hora > 00 && hora < 6){
+        }else if(hora >=18 && hora <=24 || hora > 00 && hora < 6){
             corpo.style.backgroundImage="url(imagens/noite.png)"
         }
     }
