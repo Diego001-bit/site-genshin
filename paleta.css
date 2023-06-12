@@ -85,6 +85,8 @@ main article{
     min-width: 350px;
     text-align: justify;
     background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius:5px;
 }
 main h2{
     padding: 30px 10px 10px 0px;
@@ -238,8 +240,8 @@ main article{
     max-width: 1000px;
     min-width: 350px;
     text-align: justify;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius:5px;
     background-color: white;
 }
 main h2{
@@ -287,15 +289,15 @@ ul a:hover{
 footer{
     margin-top: 20px;
     margin: auto;
-    height: 200px;
+    height: 100px;
 }
 #redes{
     
     text-align: center;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .sociais{
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-align: justify;
 
 }
