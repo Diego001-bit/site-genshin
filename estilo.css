@@ -92,9 +92,10 @@ main p{
 .imagem{
     grid-area: imagem;
     display: block;
-    width: 100%;
-    height: 400px;
-    margin: 10px;
+    width: 20vw;
+    height: 20vw;
+    margin-left: 10px;
+    margin-top: 50px;
 }
 .texto{
     grid-area: texto;
@@ -105,6 +106,7 @@ main p{
 }
 .caixa{
     display: grid;
+    padding: 10px;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
