@@ -20,6 +20,13 @@
     --romanus:'romanus',serif;
     --fonte-destaque: 'Bebas Neue', cursive;
 }
+body{
+    background-image: url('');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+}
 a{
     text-decoration: none;
 }
@@ -35,17 +42,18 @@ header {
 header h1{
     font-family: var(--fonte-destaques);
     text-align: center;
-    line-height: 3em;
     font-size: 3em;
     font-weight: bolder;
     padding-top: 10px;
 }
 header p{
     text-align: justify;
-    font-size: 1em;
+    font-size: 1.2em;
     margin: auto;
+    padding: 30px;
     max-width: 500px;
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.123);
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav a{
     color: white;
@@ -55,187 +63,36 @@ nav a{
     font-weight: bold;
 }
 nav a:hover{
-    background-color:#7b82e063;
-    transition-duration: 1s;
-
+    background-color:#ffffff57;
+    transition-duration: 1.5s;
 }
-body{
-    background-image: url('');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-size: cover;
-}
-main article{
-    margin: auto;
-    max-width: 1000px;
-    min-width: 350px;
+article{
     text-align: justify;
     background-color: white;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius:5px;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    padding: 0px 10px;
 }
-main p{
-    text-indent: 30px;
-    line-height: 2em;
-    font-size: 1.3em;
-    font-family: var(--Padrão);
-    padding: 20px;
-    font-weight: normal;
-}
-.titulo{
-    grid-area: titulo;
-    text-align: center;
-    margin: 15px auto;
-    
-}
-.imagem{
-    grid-area: imagem;
-    display: block;
-    width: 20vw;
-    height: 20vw;
-    margin-left: 10px;
-    margin-top: 50px;
-}
-.texto{
-    grid-area: texto;
-}
-.texto2{
-    grid-area: texto2;
-
-}
-.caixa{
-    display: grid;
-    padding: 10px;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    "titulo titulo titulo titulo"
-    "imagem imagem texto texto"
-    ;
-}
-h2{
-    padding: 10px;
-    padding-left: 10px;
-}
-h3{
-    font-size: 2em;
+article p{
+    line-height: 30px;
+    text-indent: 25px;
 }
 
 footer{
-    margin-top: 20px;
-    margin: auto;
-    height: 200px;
-}
-#redes{
-    
     text-align: center;
-    margin-top: 30px;
-}
-.sociais{
-    padding: 10px 40px;
-    text-align: justify;
-
-}
-footer p{
-    color: white;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    line-height: 1em;
-}
-#autor{
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--Cinzelh2);
-}
-#autor:hover{
-    color: yellow;
-}
-@media screen and (max-width: 580px){
-
-header {
-    color: white;
-    background-image: linear-gradient(to bottom,var(--cor2),var(--cor3),var(--cor5));
-    background-image: url('imagens/imgfundo2.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding: 10px;
-}
-header h1{
-    font-family: var(--fonte-destaques);
-    text-align: center;
-    line-height: 2em;
-    font-size: 1.8em;
-    font-weight: bolder;
-    padding-top: 10px;
-}
-header p{
-    text-align: justify;
-    font-size: 1em;
-    margin: auto;
-    max-width: 500px;
-    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.123);
-}
-nav a{
-    color: white;
-    padding: 10px 10px 10px 10px;
-    border-radius: 5px;
-    font-family: var(--Padrão);
-    font-weight: bold;
-}
-nav a:hover{
-    background-color:#7b82e063;
-    transition-duration: 1s;
-
-}
-main article{
     margin: auto;
     max-width: 1000px;
-    min-width: 350px;
-    text-align: justify;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius:5px;
-    background-color: white;
-}
-main p{
-    text-indent: 30px;
-    line-height: 1.7em;
-    font-size: 0.90em;
-    font-family: var(--Padrão);
-    padding: 20px;
-    font-weight: normal;
-}
-
-
-
-footer{
-    margin-top: 20px;
-    margin: auto;
-    height: 100px;
-}
-#redes{
-    
-    text-align: center;
-    margin-top: 15px;
-}
-.sociais{
-    padding: 10px 10px;
-    text-align: justify;
-
-}
-footer p{
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
-    line-height: 1em;
 }
-#autor{
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--Cinzelh2);
+footer img{
+    padding: 10px;
+    margin: 10px;
 }
-#autor:hover{
-    color: yellow;
-}
+footer img:hover{
+    background-color: white;
+    border-radius: 50%;
+    transition: 1.5s;
 }
