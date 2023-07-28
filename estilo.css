@@ -21,7 +21,7 @@
     --fonte-destaque: 'Bebas Neue', cursive;
 }
 body{
-    background-image: url('');
+
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center right;
@@ -69,11 +69,12 @@ nav a:hover{
 #personagens{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 #personagens img{
-    
+    flex:1 1 50px;
 }
 article{
     text-align: justify;
@@ -106,5 +107,101 @@ footer img:hover{
     transition: 1.5s;
 }
 #venti{
-    padding-left: 82px;
+    padding: 0px 55.5px;
+}
+#shogun,#nahida{
+    padding:0 14.5px;
+}
+@media (max-width:500px) {
+    body{
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: cover;
+    }
+    a{
+        text-decoration: none;
+    }
+    header {
+        color: white;
+        background-image: linear-gradient(to bottom,var(--cor2),var(--cor3),var(--cor5));
+        background-image: url('imagens/imgfundo2.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 10px;
+    }
+    header h1{
+        font-family: var(--fonte-destaques);
+        text-align: center;
+        font-size: 3em;
+        font-weight: bolder;
+        padding-top: 10px;
+    }
+    header p{
+        text-align: justify;
+        font-size: 1.2em;
+        margin: auto;
+        padding: 30px;
+        max-width: 500px;
+        text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.123);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    nav a{
+        color: white;
+        padding: 10px 10px 10px 10px;
+        border-radius: 5px;
+        font-family: var(--Padrão);
+        font-weight: bold;
+    }
+    nav a:hover{
+        background-color:#ffffff57;
+        transition-duration: 1.5s;
+    }
+    #personagens{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #personagens img{
+        flex:1 1 50px;
+    }
+    article{
+        text-align: justify;
+        background-color: white;
+        max-width: 1000px;
+        min-width: 300px;
+        margin: auto;
+        padding: 0px 10px;
+    }
+    article p{
+        line-height: 30px;
+        text-indent: 25px;
+    }
+    
+    footer{
+        text-align: center;
+        margin: auto;
+        max-width: 1000px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 1.2em;
+    }
+    footer img{
+        padding: 10px;
+        margin: 10px;
+    }
+    footer img:hover{
+        background-color: white;
+        border-radius: 50%;
+        transition: 1.5s;
+    }
+    #venti{
+        padding: 0px 55.5px;
+    }
+    #shogun,#nahida{
+        padding:0 14.5px;
+    }
 }
