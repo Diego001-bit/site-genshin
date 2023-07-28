@@ -219,19 +219,18 @@ header {
 header h1{
     font-family: var(--fonte-destaques);
     text-align: center;
-    line-height: 2em;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bolder;
     padding-top: 10px;
 }
 header p{
     text-align: justify;
-    font-size: 0.80em;
-    max-width:500px;
-    font-family: var(--fonte-destaques);
+    font-size: 1.2em;
     margin: auto;
+    padding: 30px;
+    max-width: 500px;
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.123);
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav a{
     color: white;
@@ -241,8 +240,8 @@ nav a{
     font-weight: bold;
 }
 nav a:hover{
-    background-color:#7b82e063;
-    transition-duration: 1s;
+    background-color:#ffffff57;
+    transition-duration: 1.5s;
 }
 main p{
     text-indent: 30px;
