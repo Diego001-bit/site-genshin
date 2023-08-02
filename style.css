@@ -20,6 +20,10 @@
     --romanus:'romanus',serif;
     --fonte-destaque: 'Bebas Neue', cursive;
 }
+::-webkit-scrollbar{
+    width: 0%;
+    height: 0%;
+}
 header {
     color: white;
     background-image: linear-gradient(to bottom,var(--cor2),var(--cor3),var(--cor5));
@@ -204,6 +208,7 @@ footer p{
     --romanus:'romanus',serif;
     --fonte-destaque: 'Bebas Neue', cursive;
 }
+
 body{
     background-image: linear-gradient(to right,var(--cor5),var(--cor2),var(--cor3));
 }

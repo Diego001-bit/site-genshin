@@ -20,6 +20,10 @@
     --romanus:'romanus',serif;
     --fonte-destaque: 'Bebas Neue', cursive;
 }
+::-webkit-scrollbar{
+    width: 0%;
+    height: 0%;
+}
 a{
     text-decoration: none;
 }
