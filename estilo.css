@@ -20,6 +20,10 @@
     --romanus:'romanus',serif;
     --fonte-destaque: 'Bebas Neue', cursive;
 }
+::-webkit-scrollbar{
+    width: 0%;
+    height: 0%;
+}
 body{
 
     background-attachment: fixed;
@@ -66,6 +70,13 @@ nav a:hover{
     background-color:#ffffff57;
     transition-duration: 1.5s;
 }
+h2{
+    text-align: center;
+    font-family: var(--romanus);
+    font-size: 3em;
+    font-weight: bolder;
+    color: white;
+}
 #personagens{
     display: flex;
     flex-direction: row;
@@ -78,7 +89,6 @@ nav a:hover{
 }
 article{
     text-align: justify;
-    background-color: white;
     max-width: 1000px;
     min-width: 300px;
     margin: auto;
@@ -108,11 +118,41 @@ footer img:hover{
 }
 #venti{
     padding: 0px 55.5px;
+    background-image: url("curiosidades/cos-vent.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 2px;
+    border-radius: 7px;
 }
-#shogun,#nahida{
+#shogun{
     padding:0 14.5px;
+    background-image: url("curiosidades/cos-shogun.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 2px;
 }
-@media (max-width:500px) {
+#nahida{
+    background-image: url("curiosidades/cos-nahida.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding:0 14.5px;
+    margin: 2px;
+}
+#zhongli{
+    background-image: url("curiosidades/cos-zhongli.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 2px;
+}
+@media (max-width:600px) {
+    ::-webkit-scrollbar{
+        width: 0px;      
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        width: 10px;
+        background-color: transparent;
+    }
     body{
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -147,6 +187,13 @@ footer img:hover{
         text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.123);
         font-family: Arial, Helvetica, sans-serif;
     }
+    h2{
+        text-align: center;
+        font-family: var(--romanus);
+        font-size: 2em;
+        font-weight: bolder;
+        color: white;
+    }
     nav a{
         color: white;
         padding: 10px 10px 10px 10px;
@@ -170,11 +217,10 @@ footer img:hover{
     }
     article{
         text-align: justify;
-        background-color: white;
         max-width: 1000px;
         min-width: 300px;
         margin: auto;
-        padding: 0px 10px;
+        padding: 0px 5px;
     }
     article p{
         line-height: 30px;
