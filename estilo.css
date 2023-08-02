@@ -134,13 +134,13 @@ footer img:hover{
     header h1{
         font-family: var(--fonte-destaques);
         text-align: center;
-        font-size: 3em;
+        font-size: 1.5em;
         font-weight: bolder;
         padding-top: 10px;
     }
     header p{
         text-align: justify;
-        font-size: 1.2em;
+        font-size: 1em;
         margin: auto;
         padding: 30px;
         max-width: 500px;
