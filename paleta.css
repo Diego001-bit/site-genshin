@@ -156,12 +156,22 @@ footer p{
     font-size: 1.2em;
     line-height: 1em;
 }
-#autor{
+footer{
+    text-align: center;
+    margin: auto;
+    max-width: 1000px;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--Cinzelh2);
+    color: white;
+    font-size: 1.2em;
 }
-#autor:hover{
-    color: yellow;
+footer img{
+    padding: 10px;
+    margin: 10px;
+}
+footer img:hover{
+    background-color: white;
+    border-radius: 50%;
+    transition: 1.5s;
 }
 
 @media screen and (max-width: 580px){
@@ -312,6 +322,7 @@ footer p{
     font-size: 1.2em;
     line-height: 1em;
 }
+
 #autor{
     font-family: Arial, Helvetica, sans-serif;
     color: var(--Cinzelh2);
