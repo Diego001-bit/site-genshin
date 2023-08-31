@@ -1,3 +1,23 @@
+let bur = document.getElementById('burgue')
+let menu= document.getElementById('menu')
+let corpo = document.getElementById('pagina')
+bur.addEventListener('click',burgue)
+function burgue(){
+    if(menu.style.display=='block'){
+        menu.style.display='none'
+    }else{
+        menu.style.display='block'
+    }
+}
+function pagina(){
+    if(window.innerWidth >= 768){
+
+        menu.style.display ="block"
+    }else{
+
+        menu.style.display="none"
+    }
+}
 function ventilador(){
     var venb = document.getElementById('ventidb')
     var vtabela = document.getElementById('vp')

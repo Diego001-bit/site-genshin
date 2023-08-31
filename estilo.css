@@ -60,6 +60,14 @@ header p{
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.123);
     font-family: Arial, Helvetica, sans-serif;
 }
+#burgue{
+    display: none;
+    text-align: end;
+    font-size: 3em;
+}
+#menu{
+    display: block;
+}
 nav a{
     color: white;
     padding: 10px 10px 10px 10px;
@@ -149,6 +157,14 @@ footer img:hover{
 
     ::-webkit-scrollbar{
         width: 0px;      
+    }
+    #burgue{
+        display: block;
+        text-align: end;
+        font-size: 3em;
+    }
+    #menu{
+        display: none;
     }
     
     ::-webkit-scrollbar-thumb{

@@ -48,6 +48,14 @@ header p{
     max-width: 1000px;
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.123);
 }
+#menu{
+    display: block;
+}
+#burgue{
+    display: none;
+    text-align: end;
+    font-size: 3em;
+}
 nav a{
     color: white;
     padding: 10px 10px 10px 10px;
@@ -217,6 +225,14 @@ footer img:hover{
 
 body{
     background-image: linear-gradient(to right,var(--cor5),var(--cor2),var(--cor3));
+}
+#menu{
+    display: none;
+}
+#burgue{
+    display: block;
+    text-align: end;
+    font-size: 3em;
 }
 header {
     color: white;

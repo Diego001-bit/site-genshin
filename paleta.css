@@ -51,12 +51,25 @@ header p{
     max-width: 500px;
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.123);
 }
+#burgue{
+    display: none;
+    padding: 5px;
+    font-size: 3.2em;
+    cursor: pointer;
+    text-align: end;
+}
+#menu{
+    display: block;
+    padding: 10px;
+
+}
 nav a{
     color: white;
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
     font-family: var(--Padrão);
     font-weight: bold;
+    font-size: 1.4em;
 }
 nav a:hover{
     background-color:#7b82e063;
@@ -199,6 +212,18 @@ footer img:hover{
 a{
     text-decoration: none;
 }
+#burgue{
+    display: block;
+    padding: 5px;
+    font-size: 3.2em;
+    cursor: pointer;
+    text-align: end;
+}
+#menu{
+    display: none;
+    padding: 10px;
+
+}
 header {
     color: white;
     background-image: linear-gradient(to bottom,var(--cor2),var(--cor3),var(--cor5));
@@ -229,6 +254,7 @@ nav a{
     border-radius: 5px;
     font-family: var(--Padrão);
     font-weight: bold;
+    font-size: 1em;
 }
 nav a:hover{
     background-color:#7b82e063;
